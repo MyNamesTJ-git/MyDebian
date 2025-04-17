@@ -1,0 +1,28 @@
+## Apt repos | Access repo list via "sudo nano /etc/apt/sources.list"
+# Contrib cources 
+deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+deb http://debidebian.org/debian stable main contrib non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
+deb-src http://debidebian.org/debian stable main contrib non-free-firmware
+
+# Basic sources
+deb http://deb.debian.org/debian bookworm main non-free-firmware
+deb http://debidebian.org/debian stable main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+deb-src http://debidebian.org/debian stable main non-free-firmware
+
+# Security Sources (Commonly has issues so will be commented out by default)
+deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb http://deb.debian.org/debian-security/ stable-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ stable-security main non-free-firmware
+
+# Update Sources
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb http://deb.debian.org/debian stable-updates main non-free-firmware
+deb-src http://deb.debian.org/debian stable-updates main non-free-firmware
+
+# Afterwards run "sudo apt update && sudo apt upgrade && sudo apt --help"
+
+# This list was produced by MyNamesTJ (online alias)
