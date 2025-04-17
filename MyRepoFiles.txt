@@ -25,4 +25,6 @@ deb-src http://deb.debian.org/debian stable-updates main non-free-firmware
 
 # Afterwards run "sudo apt update && sudo apt upgrade && sudo apt --help"
 
+# Src sources are commented out because they are used for manual configuration which is mostly useful for developers. to regain access to these comment out the '#' before the lines
+
 # This list was produced by MyNamesTJ (online alias)
