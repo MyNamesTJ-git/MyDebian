@@ -3,13 +3,13 @@
 deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
 deb http://deb.debian.org/debian stable main contrib non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
-deb-src http://debidebian.org/debian stable main contrib non-free-firmware
+deb-src http://deb.debian.org/debian stable main contrib non-free-firmware
 
 # Basic sources
 deb http://deb.debian.org/debian bookworm main non-free-firmware
 deb http://deb.debian.org/debian stable main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware
-deb-src http://debidebian.org/debian stable main non-free-firmware
+deb-src http://deb.debian.org/debian stable main non-free-firmware
 
 # Security Sources (Commonly has issues so will be commented out by default)
 deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
