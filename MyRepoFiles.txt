@@ -1,13 +1,13 @@
 ## Apt repos | Access repo list via "sudo nano /etc/apt/sources.list"
 # Contrib cources 
 deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
-deb http://debidebian.org/debian stable main contrib non-free-firmware
+deb http://deb.debian.org/debian stable main contrib non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
 deb-src http://debidebian.org/debian stable main contrib non-free-firmware
 
 # Basic sources
 deb http://deb.debian.org/debian bookworm main non-free-firmware
-deb http://debidebian.org/debian stable main non-free-firmware
+deb http://deb.debian.org/debian stable main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware
 deb-src http://debidebian.org/debian stable main non-free-firmware
 
