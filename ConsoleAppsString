@@ -1,7 +1,0 @@
-sudo apt update --fix-missing || echo "Update failed, skipping..." && \
-sudo apt upgrade -y --fix-missing || echo "Upgrade failed, continuing..." && \
-sudo apt install --reinstall -y alacritty thunar synaptic neofetch htop code neovim \
-featherpad feh mpv curl mupdf git build-essential tmux zsh fzf ncdu ripgrep bat libreoffice --fix-missing || echo "Some packages failed to install, continuing..." && \
-curl -fsS https://dl.brave.com/install.sh | sh || echo "Brave installation failed, continuing..." && \
-sudo apt remove -y kmail konqueror kdevelop korganizer kget kaddressbook knotes kcalc || echo "Package removal failed, continuing..." && \
-sudo apt autoremove -y || echo "Autoremove failed, continuing..." && sudo apt clean || echo "Cleanup failed, continuing..."
