@@ -1,30 +1,56 @@
 ##### Apt repos | Access repo list via "sudo nano /etc/apt/sources.list"
-# Contrib cources 
+
+# HOW TO MODIFY AND INSTALL PACKAGES FROM DIFFERENT RELEASES:
+# By default, the system installs from Bookworm (Stable) unless configured otherwise.
+# To modify access to Testing (Trixie) repositories:
+# 1. Uncomment the desired repository lines by removing the '#' at the beginning.
+# 2. Use the "-t" flag with apt to install packages specifically from Trixie.
+
+# Examples:
+# - Install from Trixie (Testing):
+#   sudo apt install -t trixie <package-name>
+# - Install from Bookworm (Stable):
+#   sudo apt install -t bookworm <package-name>
+# - Use "apt policy <package-name>" to check available versions across releases.
+
+# Notes:
+# - Always back up your sources.list before making changes.
+# - Keep Testing (Trixie) sources commented unless needed, as they may introduce instability.
+
+### Main Bookworm Sources
 deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
-deb http://deb.debian.org/debian stable main contrib non-free-firmware
 ##deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
-##deb-src http://deb.debian.org/debian stable main contrib non-free-firmware
 
-# Basic sources
-deb http://deb.debian.org/debian bookworm main non-free-firmware
-deb http://deb.debian.org/debian stable main non-free-firmware
-##deb-src http://deb.debian.org/debian bookworm main non-free-firmware
-##deb-src http://deb.debian.org/debian stable main non-free-firmware
+# Uncomment for Trixie (Testing) Sources
+#deb http://deb.debian.org/debian trixie main contrib non-free-firmware
+##deb-src http://deb.debian.org/debian trixie main contrib non-free-firmware
 
-# Security Sources (Commonly has issues so will be commented out by default)
+### Security Updates for Bookworm (Commented by default if issues occur)
 deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
 ##deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
-deb http://deb.debian.org/debian-security/ stable-security main non-free-firmware
-##deb-src http://deb.debian.org/debian-security/ stable-security main non-free-firmware
 
-# Update Sources
+# Uncomment for Trixie (Testing) Security Updates
+#deb http://deb.debian.org/debian-security/ trixie-security main non-free-firmware
+##deb-src http://deb.debian.org/debian-security/ trixie-security main non-free-firmware
+
+### Bookworm Update Sources
 deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 ##deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
-deb http://deb.debian.org/debian stable-updates main non-free-firmware
-##deb-src http://deb.debian.org/debian stable-updates main non-free-firmware
 
-# Afterwards run "sudo apt update && sudo apt upgrade && sudo apt --help"
+# Uncomment for Trixie (Testing) Update Sources
+#deb http://deb.debian.org/debian trixie-updates main non-free-firmware
+##deb-src http://deb.debian.org/debian trixie-updates main non-free-firmware
 
-# Src sources are commented out because they are used for manual configuration which is mostly useful for developers. to regain access to these comment out the '#' before the lines
+### Additional Notes
+# Src sources are commented out because they are used for manual configuration, useful mainly for developers.
+# Uncomment `deb-src` lines if you need access to source packages.
+
+# Afterwards, refresh package lists and upgrade:
+# sudo apt update && sudo apt upgrade
 
 # This list was produced by MyNamesTJ (online alias)
+
+
+
+
+
