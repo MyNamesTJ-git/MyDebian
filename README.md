@@ -146,7 +146,7 @@ Run the setup.sh script with the following command: `sudo bash setup.sh`
   - Updates your shell to apply the alias immediately.
 
 ### 4. Run the Maintenance Script
-After running the setup script, you can use the maintenance script at any time by typing: `debhealth`
+After running the setup script, you can use the maintenance script at any time by typing: `debhealth` Note: It can take a while ~5-10 minutes
 
 ### 5. Optional: Verify the Changes
 Check that the repository list was updated: `cat /etc/apt/sources.list`
