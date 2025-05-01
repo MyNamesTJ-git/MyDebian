@@ -120,6 +120,7 @@ Start by cloning the repository to your local machine:
 
 ### 2. Run the Setup Script
 Run the setup.sh script with the following command: `sudo bash setup.sh`
+***Make sure you restart your terminal after installing!!!***
 
 ### 3. What the Script Does
  When you run setup.sh, it will:
@@ -151,9 +152,6 @@ After running the setup script, you can use the maintenance script at any time b
 Check that the repository list was updated: `cat /etc/apt/sources.list`
 
 Confirm that the alias is working: `debhealth`
-
-### 6. Troubleshoot: Fix `debhealth` alias
-- If your debhealth alias does not work a quick fix is to go to your terminal and open your bashrc config with `sudo nano ~/.bashrc` then scroll to the bottom and make a new line (I would recommend making a commented lable like `# USER ADDED`) at the botton you should find an entry that says `alias debhealth='bash ~/debhealth.sh'`, you may need to replace it with `alias debheath='bash ~/MyDebian/debhealth.sh'`
 
 ## If your missing dependancies
 - `sudo apt update`
