@@ -152,6 +152,9 @@ Check that the repository list was updated: `cat /etc/apt/sources.list`
 
 Confirm that the alias is working: `debhealth`
 
+### 6. Troubleshoot: Fix `debhealth` alias
+- If your debhealth alias does not work a quick fix is to go to your terminal and open your bashrc config with `sudo nano ~/.bashrc` then scroll to the bottom and make a new line (I would recommend making a commented lable like `# USER ADDED`) at the botton you should find an entry that says `alias debhealth='bash ~/debhealth.sh'`, you may need to replace it with `alias debheath='bash ~/MyDebian/debhealth.sh'`
+
 ## If your missing dependancies
 - `sudo apt update`
 - `sudo apt install -y debsums deborphan`
