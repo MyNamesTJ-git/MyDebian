@@ -1,4 +1,4 @@
-# **MyDebian**
+# **MyDebian | Abandoned**
 
 This is my repository for my Lenovo ThinkPad T480s I use as a High school (Soon to be college) Student. I do not currently have any of my ricing (As i haven't done much yet) but if I do, I will leave any dotfiles in here. This is going to mostly have what I use at the start of my Linux (Debian 12) installation. This will include my repositories in my sources list and a general maintenance script along with more stuff as I get deeper and deeper in the Linux rabbit hole. 
 
